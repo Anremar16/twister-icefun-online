@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:rgb(0, 0, 0);"></body>
+
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+
+<div id="player">
+    <object width="600" height="450">
+        <param name="movie" value="plosinovka.swf">
+        <embed src="twister.swf" width="600" height="450">
+        </embed>
+    </object>
+</div>
+
+<button onclick="fullscreen()">
+    <img src="fullscreen.svg" />
+</button>
+
+    <script> 
+        function fullscreen() {
+            document.querySelector("ruffle-embed, ruffle-object, ruffle-player").enterFullscreen();
+        }
+
+    </script> 
+
+</body>
+</html>
